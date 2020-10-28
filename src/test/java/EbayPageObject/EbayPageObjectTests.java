@@ -10,6 +10,8 @@ public class EbayPageObjectTests {
 
 	public AppiumDriver<WebElement> driver;
 	
+	// xpath of elements 
+	
 	@FindBy(id="com.amazon.mShop.android.shopping:id/skip_sign_in_button")
 	public WebElement skipsigninbtn;
 
@@ -53,14 +55,16 @@ public class EbayPageObjectTests {
 	@FindBy(xpath="[@class='android.widget.Button'][@text='Delete'][@package='com.amazon.mShop.android.shopping'][@index='0']")
 	public WebElement DeleteCartbtn;
 	
-	@FindBy(xpath="[@class='android.view.View'][@text='Your Shopping Cart lives to serve. Give it purpose — fill it with groceries, clothing, household supplies, electronics, and more.'][@package='com.amazon.mShop.android.shopping'][@index='2']")
+	@FindBy(xpath="[@class='android.view.View'][@text='Your Shopping Cart lives to serve. Give it purpose â€” fill it with groceries, clothing, household supplies, electronics, and more.'][@package='com.amazon.mShop.android.shopping'][@index='2']")
     public WebElement NoItemsinCartmsg;
 	
+	//intialize page factory
 	public EbayPageObjectTests(AppiumDriver<WebElement> driver) {
 		
 		PageFactory.initElements(driver,this);
 	}
 	
+	//Reusable methods
 	public void Click_sigininbtn() {
  
 		skipsigninbtn.click();

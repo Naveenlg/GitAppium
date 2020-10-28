@@ -38,7 +38,7 @@ public class ExcelReadWrite {
 		return LastRowNum;
 		
 	}
-	
+	// read cell value
 	public  String ReadValue(HSSFSheet sheet,int rowindex, int cellnum) {
 		
 		HSSFCell cell=sheet.getRow(rowindex).getCell(cellnum);
@@ -71,7 +71,7 @@ public class ExcelReadWrite {
 	  
 	  }
 	 
-     
+     //write cell value
      public void WriteCell(HSSFSheet sheet,int rowindex,int cellnum,String value) {
     	 
     	 HSSFCell WriteCell=sheet.getRow(rowindex).getCell(cellnum);

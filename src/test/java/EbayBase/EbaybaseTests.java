@@ -79,6 +79,8 @@ public class EbaybaseTests {
 
 	
 	//app details
+		
+     //Launch Amazon App
 	
    // capabilities.setCapability("app","D:/Selenium_Programs_Java/EbayTestcases/src/test/resources/Amazon_shopping.apk");
     

@@ -5,4 +5,4 @@ Dataprovider Component
 Page Object component
 Scenario search component
 
-Changes made code
+Changes made to script

@@ -17,6 +17,8 @@ public class EbayScenarioTests extends EbaybaseTests{
 	
 	SoftAssert sassert= new SoftAssert();
 	
+	//add cart dataprovider
+	
 	@Test(dataProvider= "dp_AddCart", dataProviderClass=EbayDataProvider.EbayDataproviderTests.class)
 	public void testAddcart(Map search) {
 		
@@ -30,10 +32,12 @@ public class EbayScenarioTests extends EbaybaseTests{
 		
 		extenttest = extentreport.startTest(TC_ID);
 		
+		//starts the Appium Server
 		start_server();
 		
 		log.info("Executing the test cases"+ TC_ID+ "Order"+Order);
 		
+		//launches emulator device
 		launchEmulator("NaveenEmulator");
 		
 		ExtentReports();
